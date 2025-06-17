@@ -1,0 +1,165 @@
+/* html {
+  min-height: 100%;
+} */
+
+body {
+  background-color: #1c252e;
+  color: white;
+  margin: 0 auto;
+  min-height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.plan-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 72px;
+  margin: 100px 0 50px;
+}
+
+.highlight {
+  font-family: "arial black", sans-serif;
+  color: yellow;
+  /* outline: 2px solid yellow; */ /* não gostei */
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3); /* não gostei também kkkk */
+}
+
+.header {
+  background-color: #111f27;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: "Cal Sans", sans-serif;
+  /* text-transform: uppercase; */
+  font-weight: bolder;
+  font-size: 36px;
+  margin-left: 20px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.header__logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+}
+
+.header__nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 16px;
+}
+
+a.header__nav--selected {
+  border-radius: 1px;
+  background-color: rgb(255, 230, 0);
+  color: black;
+  pointer-events: none;
+}
+
+.header__nav a:hover {
+  border-radius: 1px;
+  /* text-decoration: underline; */
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 254, 212);
+  transition: all 0.3s ease-in-out; /* achei essa propriedade sem querer kkkkkkk ai meti o louco e ficou bacana */
+}
+
+.plan {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */ /*testei e não gostei*/
+}
+
+.plan-card {
+  background-color: #1f262c;
+  padding: 32px;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.class-plan__title {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(255, 230, 0);
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.plan-card p {
+  /* background-color: #d12424; */
+  margin-top: 0;
+}
+
+.plan-card__description {
+  margin: 0 0 52px 0;
+  color: ghostwhite;
+  font-size: 18px;
+  padding-left: 20px;
+  flex: 1;
+  /* list-style-type: none; */
+}
+
+.plan-card__price1 {
+  font-size: 36px;
+  color: rgb(154, 255, 213);
+  text-shadow: 1px 1px 2px #000000, 1px 1px 5px #000000;
+  font-family: "Cal Sans", sans-serif;
+}
+
+.plan-card__price2 {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 36px;
+  color: rgb(255, 199, 154);
+  text-shadow: 1px 1px 2px #000000, 1px 1px 5px #000000;
+}
+
+.plan-card__price3 {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 36px;
+  color: rgb(197, 138, 231);
+  text-shadow: 1px 1px 2px #000000, 1px 1px 5px #000000;
+}
+
+.plan-card__description li::marker {
+  color: yellow;
+}
+
+.plan-card__description li {
+  line-height: 1.5;
+}
+
+.plan-card__act {
+  background-color: yellow;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 10px;
+}
+
+.plan-card__act:hover {
+  outline: 1px solid yellow;
+  background-color: transparent;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
